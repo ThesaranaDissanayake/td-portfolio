@@ -1,0 +1,627 @@
+/* MDX Typography Styles */
+
+/* Base typography improvements */
+.mdx-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+/* Reading width for better readability */
+.mdx-content > * {
+  max-width: none;
+  width: 100%;
+}
+
+.mdx-content > .full-width {
+  max-width: none;
+}
+
+/* Content alignment */
+.mdx-content {
+  text-align: left;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+.mdx-content > h1,
+.mdx-content > h2,
+.mdx-content > h3,
+.mdx-content > h4,
+.mdx-content > h5,
+.mdx-content > h6 {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Headings with improved spacing and anchors */
+.mdx-content h1,
+.mdx-content h2,
+.mdx-content h3,
+.mdx-content h4,
+.mdx-content h5,
+.mdx-content h6 {
+  scroll-margin-top: 140px;
+  /* Account for fixed header and TOC navigation */
+  position: relative;
+}
+
+.mdx-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 4rem 0 2rem 0;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.mdx-content h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1.5rem 0;
+  line-height: 1.2;
+}
+
+.mdx-content h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  line-height: 1.3;
+}
+
+.mdx-content h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.75rem 0 1rem 0;
+  line-height: 1.4;
+}
+
+.mdx-content h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.mdx-content h6 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.75rem 0;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Paragraphs with improved spacing */
+.mdx-content p {
+  margin: 1.5rem 0;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.mdx-content p:first-child {
+  margin-top: 0;
+}
+
+.mdx-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Enhanced lists */
+.mdx-content ul,
+.mdx-content ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.mdx-content ul {
+  list-style: none;
+}
+
+.mdx-content ul > li {
+  position: relative;
+  margin: 0.75rem 0;
+  line-height: 1.7;
+}
+
+.mdx-content ul > li::before {
+  content: "▸";
+  color: #e30000;
+  font-weight: bold;
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  font-size: 1.2em;
+}
+
+.mdx-content ol > li {
+  margin: 0.75rem 0;
+  line-height: 1.7;
+}
+
+.mdx-content ol > li::marker {
+  color: #e30000;
+  font-weight: 700;
+}
+
+/* Nested lists */
+.mdx-content ul ul,
+.mdx-content ol ul,
+.mdx-content ul ol,
+.mdx-content ol ol {
+  margin: 0.5rem 0;
+  font-size: 0.95em;
+}
+
+/* Enhanced blockquotes */
+.mdx-content blockquote {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem 1.5rem 3rem;
+  background: rgba(194, 65, 12, 0.03);
+  border-left: 4px solid #e30000;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+[data-mui-color-scheme="dark"] .mdx-content blockquote {
+  background: rgba(194, 65, 12, 0.08);
+}
+
+.mdx-content blockquote::before {
+  content: '"';
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  font-size: 3rem;
+  color: #e30000;
+  opacity: 0.3;
+  font-family: serif;
+  line-height: 1;
+}
+
+.mdx-content blockquote p {
+  margin: 0;
+}
+
+.mdx-content blockquote cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.mdx-content blockquote cite::before {
+  content: "— ";
+}
+
+/* Enhanced links */
+.mdx-content a {
+  color: #e30000;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.mdx-content a:hover {
+  /* border-bottom-color: #e30000;
+  background: rgba(194, 65, 12, 0.05);
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: -2px -4px; */
+  text-decoration: underline;
+}
+
+.mdx-content a[href^="http"]::after {
+  content: "↗";
+  margin-left: 4px;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* Enhanced emphasis */
+.mdx-content strong {
+  font-weight: 700;
+  color: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(194, 65, 12, 0.1),
+    rgba(194, 65, 12, 0.05)
+  );
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.mdx-content em {
+  font-style: italic;
+  color: inherit;
+  position: relative;
+}
+
+/* Code styling enhancements */
+.mdx-content :not(pre) > code {
+  background: rgba(194, 65, 12, 0.08) !important;
+  color: #c41e3a !important;
+  padding: 3px 6px !important;
+  border-radius: 4px !important;
+  font-family: "Fira Code", "Consolas", "Monaco", monospace !important;
+  font-size: 0.9em !important;
+  font-weight: 500 !important;
+  border: 1px solid rgba(194, 65, 12, 0.2) !important;
+}
+
+[data-mui-color-scheme="dark"] .mdx-content :not(pre) > code {
+  background: rgba(194, 65, 12, 0.15) !important;
+  color: #ff6b84 !important;
+  border-color: rgba(194, 65, 12, 0.3) !important;
+}
+
+/* Pre and code blocks */
+.mdx-content pre {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-mui-color-scheme="dark"] .mdx-content pre {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Tables */
+.mdx-content table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-mui-color-scheme="dark"] .mdx-content table {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mdx-content th {
+  background: rgba(194, 65, 12, 0.05);
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 2px solid rgba(194, 65, 12, 0.1);
+}
+
+[data-mui-color-scheme="dark"] .mdx-content th {
+  background: rgba(194, 65, 12, 0.1);
+  border-bottom-color: rgba(194, 65, 12, 0.2);
+}
+
+.mdx-content td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-mui-color-scheme="dark"] .mdx-content td {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.mdx-content tr:last-child td {
+  border-bottom: none;
+}
+
+.mdx-content tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+[data-mui-color-scheme="dark"] .mdx-content tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Horizontal rules */
+.mdx-content hr {
+  margin: 3rem 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e30000, transparent);
+  border-radius: 1px;
+}
+
+/* Images */
+.mdx-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.mdx-content img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image loading states */
+.mdx-content img[data-loading="true"] {
+  opacity: 0.6;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+[data-mui-color-scheme="dark"] .mdx-content img[data-loading="true"] {
+  background: linear-gradient(90deg, #333 25%, #444 50%, #333 75%);
+  background-size: 200% 100%;
+}
+
+/* Image error handling */
+.mdx-content img[data-error="true"] {
+  border: 2px dashed #ccc;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: #666;
+}
+
+[data-mui-color-scheme="dark"] .mdx-content img[data-error="true"] {
+  border-color: #555;
+  background: #222;
+  color: #999;
+}
+
+/* Image container improvements */
+.mdx-content .image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.mdx-content .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mdx-content .image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+/* Figure captions */
+.mdx-content figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.mdx-content figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+[data-mui-color-scheme="dark"] .mdx-content figcaption {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Details and summary */
+.mdx-content details {
+  margin: 1.5rem 0;
+  border: 1px solid rgba(194, 65, 12, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mdx-content summary {
+  padding: 1rem;
+  background: rgba(194, 65, 12, 0.05);
+  cursor: pointer;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(194, 65, 12, 0.1);
+  transition: background 0.2s ease;
+}
+
+.mdx-content summary:hover {
+  background: rgba(194, 65, 12, 0.08);
+}
+
+.mdx-content details[open] summary {
+  border-bottom: 1px solid rgba(194, 65, 12, 0.2);
+}
+
+.mdx-content details > *:not(summary) {
+  padding: 0 1rem 1rem 1rem;
+}
+
+/* Keyboard keys */
+.mdx-content kbd {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 2px 6px;
+  font-family: "Fira Code", "Consolas", "Monaco", monospace;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+[data-mui-color-scheme="dark"] .mdx-content kbd {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Mark/highlight text */
+.mdx-content mark {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 235, 59, 0.3),
+    rgba(255, 193, 7, 0.2)
+  );
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: inherit;
+}
+
+/* Subscript and superscript */
+.mdx-content sub,
+.mdx-content sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.mdx-content sup {
+  top: -0.5em;
+}
+
+.mdx-content sub {
+  bottom: -0.25em;
+}
+
+/* Task lists */
+.mdx-content .task-list-item {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.mdx-content .task-list-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+  accent-color: #e30000;
+}
+
+/* Definition lists */
+.mdx-content dl {
+  margin: 1.5rem 0;
+}
+
+.mdx-content dt {
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #e30000;
+}
+
+.mdx-content dd {
+  margin: 0.5rem 0 0 1.5rem;
+  line-height: 1.7;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .mdx-content {
+    font-size: 1rem;
+  }
+
+  .mdx-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .mdx-content h2 {
+    font-size: 1.875rem;
+  }
+
+  .mdx-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .mdx-content h4 {
+    font-size: 1.25rem;
+  }
+
+  .mdx-content ul,
+  .mdx-content ol {
+    padding-left: 1.5rem;
+  }
+
+  .mdx-content blockquote {
+    padding: 1rem 1.5rem 1rem 2.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .mdx-content table {
+    font-size: 0.9rem;
+  }
+
+  .mdx-content th,
+  .mdx-content td {
+    padding: 8px 12px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .mdx-content {
+    font-size: 12pt;
+    line-height: 1.6;
+    color: black !important;
+  }
+
+  .mdx-content h1,
+  .mdx-content h2,
+  .mdx-content h3,
+  .mdx-content h4,
+  .mdx-content h5,
+  .mdx-content h6 {
+    color: black !important;
+    page-break-after: avoid;
+  }
+
+  .mdx-content a {
+    color: black !important;
+    text-decoration: underline;
+  }
+
+  .mdx-content pre,
+  .mdx-content code {
+    background: #f5f5f5 !important;
+    color: black !important;
+  }
+
+  .mdx-content blockquote {
+    background: #f9f9f9 !important;
+    border-left-color: #666 !important;
+  }
+}

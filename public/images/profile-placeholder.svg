@@ -1,0 +1,51 @@
+<svg
+  width="900"
+  height="700"
+  viewBox="0 0 900 700"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">
+    Warm editorial profile placeholder for Thesarana Dissanayake.
+  </desc>
+  <rect width="900" height="700" fill="#1C1815" />
+  <rect
+    x="64"
+    y="64"
+    width="772"
+    height="572"
+    fill="#F4EFE7"
+    opacity="0.06"
+    stroke="#F4EFE7"
+    stroke-opacity="0.18"
+  />
+  <circle cx="450" cy="270" r="92" fill="#E4602E" opacity="0.95" />
+  <path
+    d="M302 570c20-76 78-126 148-126s128 50 148 126H302z"
+    fill="#F4EFE7"
+    opacity="0.9"
+  />
+  <text
+    x="450"
+    y="150"
+    text-anchor="middle"
+    fill="#F4EFE7"
+    font-family="Arial, sans-serif"
+    font-size="26"
+    font-weight="700"
+  >
+    THESARANA DISSANAYAKE
+  </text>
+  <text
+    x="450"
+    y="626"
+    text-anchor="middle"
+    fill="#A79D90"
+    font-family="Arial, sans-serif"
+    font-size="18"
+  >
+    Digital Transformation | Software Engineering | Automation
+  </text>
+</svg>

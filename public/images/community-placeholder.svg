@@ -1,0 +1,45 @@
+<svg
+  width="900"
+  height="520"
+  viewBox="0 0 900 520"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Community placeholder</title>
+  <desc id="desc">Abstract community involvement placeholder.</desc>
+  <rect width="900" height="520" fill="#1C1815" />
+  <rect
+    x="58"
+    y="58"
+    width="784"
+    height="404"
+    fill="#F4EFE7"
+    opacity="0.06"
+    stroke="#F4EFE7"
+    stroke-opacity="0.16"
+  />
+  <circle cx="340" cy="210" r="58" fill="#E4602E" />
+  <circle cx="450" cy="184" r="68" fill="#F4EFE7" opacity="0.9" />
+  <circle cx="560" cy="210" r="58" fill="#E4602E" />
+  <path
+    d="M238 382c22-68 76-110 137-110s115 42 137 110H238z"
+    fill="#E4602E"
+    opacity="0.78"
+  />
+  <path
+    d="M356 396c24-86 86-138 162-138s138 52 162 138H356z"
+    fill="#F4EFE7"
+    opacity="0.9"
+  />
+  <text
+    x="450"
+    y="442"
+    text-anchor="middle"
+    fill="#A79D90"
+    font-family="Arial, sans-serif"
+    font-size="20"
+  >
+    Community | Leadership | Teamwork
+  </text>
+</svg>
