@@ -34,7 +34,7 @@ const Projects = () => {
   return (
     <Container maxWidth="lg" sx={{ minHeight: "100vh", pb: { xs: 6, md: 10 } }}>
       <PageHero
-        eyebrow="Selected work"
+        eyebrow="Sample Selected work"
         title="Digital systems and automation work"
         subtitle="A collection of production systems, research work, workflow automation, reporting, and operational tools built to solve practical business problems."
       >
