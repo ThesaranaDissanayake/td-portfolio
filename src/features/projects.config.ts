@@ -29,7 +29,7 @@ export const portfolioProjects: PortfolioProject[] = [
     summary:
       "Developed a Sri Lanka-specific MDM workflow application that digitalized master data request submission, approval, SCM review, MDM processing, documentation, audit history, and finalization.",
     description:
-      "A production MDM workflow system for EFL Sri Lanka that replaced Excel and email-based request handling with structured validation, approvals, traceability, and controlled finalization.",
+      "A production MDM workflow system for a Sri Lankan operation that replaced Excel and email-based request handling with structured validation, approvals, traceability, and controlled finalization.",
     image: "/projects/Sri Lanka Master Data Management System.png",
     demoVideos: [
       {
@@ -41,15 +41,15 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
     content: `## About
 
-The Sri Lanka Master Data Management System was a production web application developed specifically for EFL's Sri Lanka operation. It digitalized the local process for requesting, reviewing, approving, and finalizing master data changes used within CargoWise.
+The Sri Lanka Master Data Management System was a production web application developed specifically for a Sri Lankan operation. It digitalized the local process for requesting, reviewing, approving, and finalizing master data changes used within CargoWise.
 
-The system supported both new master data creation and updates to existing master data, replacing a heavily manual process based on Excel files, email communication, and repeated follow-ups. It was designed around Sri Lanka-specific companies, departments, approval responsibilities, validation requirements, and operational procedures.
+The system supported both new master data creation and updates to existing master data, replacing a heavily manual process based on Excel files, email communication, and repeated follow-ups. It was designed around Sri Lanka-specific organizations, departments, approval responsibilities, validation requirements, and operational procedures.
 
 This solution was intentionally built for the local operating model and did not support the configurable, multi-country requirements of the current Global MDM platform.
 
 ## Objective
 
-The project aimed to establish a controlled and traceable process for managing master data requests across the Sri Lanka operation.
+The project aimed to establish a controlled and traceable process for managing master data requests across the Sri Lankan operation.
 
 The main objectives were to:
 
@@ -65,9 +65,9 @@ The main objectives were to:
 
 I designed and developed a centralized, workflow-based MDM application that managed the complete request lifecycle, from initial submission through business approval, SCM review, MDM processing, and finalization.
 
-The application provided structured forms with conditional validation based on the request type, account group, organization, country, and business requirements. Requests were automatically directed to the appropriate approvers according to Sri Lanka's operating rules.
+The application provided structured forms with conditional validation based on the request type, account group, organization, country, and business requirements. Requests were automatically directed to the appropriate approvers according to the local operating rules.
 
-Where SCM approval was required for a Sri Lanka request, the workflow prevented the request from bypassing SCM and reaching MDM without the necessary review.
+Where SCM approval was required for a request, the workflow prevented the request from bypassing SCM and reaching MDM without the necessary review.
 
 The solution included:
 
@@ -93,7 +93,7 @@ Before the application, request details, supporting files, approvals, and operat
 
 The implemented system created one controlled platform where users could submit requests, approvers could review the relevant information, SCM could complete required operational checks, and the MDM team could process and finalize approved records.
 
-Although the system was highly effective for Sri Lanka, its workflow, configuration, and business rules were closely aligned with the local operation. The experience and operational knowledge gained from this project later provided a strong foundation for planning the current Global MDM platform.
+Although the system was highly effective for the local operation, its workflow, configuration, and business rules were closely aligned with Sri Lanka-specific requirements. The experience and operational knowledge gained from this project later provided a strong foundation for planning the current Global MDM platform.
 
 ## Key Work
 
@@ -111,7 +111,7 @@ Although the system was highly effective for Sri Lanka, its workflow, configurat
 - Added audit logs and approval histories to provide traceability for each request.
 - Built administrative functionality for managing users, roles, and approval assignments.
 - Supported the deployment and production operation of the application using PostgreSQL, Docker, and Azure.
-- Prepared the system structure and operational controls required for adoption by the Sri Lanka teams.
+- Prepared the system structure and operational controls required for adoption by local teams.
 - Produced a project demonstration video presenting the complete end-to-end automation process.
 
 ## Business Value
@@ -122,7 +122,7 @@ Although the system was highly effective for Sri Lanka, its workflow, configurat
 
 **Faster request processing:** Automated routing and clear ownership reduced delays caused by uncertainty about who needed to review or process a request.
 
-**Stronger process control:** Mandatory workflow stages ensured that Sri Lanka-specific business and SCM approvals were completed before requests reached MDM.
+**Stronger process control:** Mandatory workflow stages ensured that the required business and SCM approvals were completed before requests reached MDM.
 
 **Greater visibility:** Users and approvers could see the current request status, pending action, comments, and previous decisions from one application.
 
@@ -132,7 +132,7 @@ Although the system was highly effective for Sri Lanka, its workflow, configurat
 
 **Reduced operational risk:** The system minimized incomplete submissions, approval bypasses, inconsistent request formats, and uncontrolled master data changes.
 
-**Foundation for future transformation:** The project demonstrated the value of workflow-based master data governance within the Sri Lanka operation and provided practical experience that informed the design of the later Global MDM initiative.`,
+**Foundation for future transformation:** The project demonstrated the value of workflow-based master data governance within a local operation and provided practical experience that informed the design of the later Global MDM initiative.`,
     date: "2026",
     likes: 0,
     featured: true,
@@ -148,7 +148,6 @@ Although the system was highly effective for Sri Lanka, its workflow, configurat
       "TensorFlow",
       "Fast api",
       "Firebase Realtime Database",
-
       "Arduino",
       "NodeMCU ESP8266",
       "MAX30102",
@@ -316,7 +315,7 @@ The research evaluation reported 72.5% model accuracy and an average 74.3% align
     image: "/projects/Efl Lunch Booking Power App.png",
     content: `## About
 
-EFL Lunch Booking App is a Power App introduced to improve the daily lunch reservation process. Lunch reservations were previously managed using a fixed number of employees in each department, but those counts could change and had to be communicated manually to the kitchen.
+Lunch Booking App is a Power App introduced to improve the daily lunch reservation process. Lunch reservations were previously managed using a fixed number of employees in each department, but those counts could change and had to be communicated manually to the kitchen.
 
 ## Objective
 
@@ -481,8 +480,8 @@ The workflow reduces manual file handling time, lowers naming errors, and improv
   },
   {
     id: 7,
-    slug: "michelin-job-automation",
-    title: "Michelin Job Automation",
+    slug: "logistics-job-creation-automation",
+    title: "Logistics Job Creation Automation",
     type: "Desktop Logistics Automation",
     technologies: [
       "Desktop Application",
@@ -492,19 +491,19 @@ The workflow reduces manual file handling time, lowers naming errors, and improv
       "Outlook Email",
     ],
     summary:
-      "Developed a desktop-based logistics automation workflow that streamlines CargoWise job creation for Michelin Ocean Export shipments using Cargo Feeder, CargoSync, XML generation, and Outlook confirmations.",
+      "Developed a desktop-based logistics automation workflow that streamlines CargoWise job creation for customer-specific ocean export shipments using structured Excel input, XML generation, automated processing, and Outlook confirmations.",
     description:
-      "A controlled Michelin shipment job-creation automation that validates booking data, generates CargoWise-compatible XML files, prevents incomplete or duplicate submissions, and sends confirmation emails.",
+      "A controlled ocean-export shipment job-creation automation that validates booking data, generates CargoWise-compatible XML files, prevents incomplete or duplicate submissions, and sends confirmation emails.",
     image: "/projects/Michelin Job Automation.png",
     content: `## About
 
-Michelin Job Automation is a desktop-based logistics automation solution developed to streamline CargoWise job creation for Michelin Ocean Export shipments. The solution combines a macro-enabled Cargo Feeder Excel template, the custom-built CargoSync application, XML generation, CargoWise integration, and Outlook-based confirmation emails into one controlled workflow.
+Logistics Job Creation Automation is a desktop-based solution developed to streamline CargoWise job creation for customer-specific ocean export shipments. The solution combines a macro-enabled Excel feeder template, a custom desktop processing application, XML generation, CargoWise integration, and Outlook-based confirmation emails into one controlled workflow.
 
-Users enter shipment and booking information into the Cargo Feeder template, validate the required fields, and initiate processing through CargoSync. The application converts completed booking records into the required XML structure and sends them to CargoWise for automated job creation.
+Users enter shipment and booking information into the structured Excel template, validate the required fields, and initiate processing through the desktop application. The application converts completed booking records into the required XML structure and sends them to CargoWise for automated job creation.
 
 ## Objective
 
-The objective of the project was to reduce the time, effort, and operational risk associated with manually creating Michelin shipment jobs in CargoWise.
+The objective of the project was to reduce the time, effort, and operational risk associated with manually creating customer shipment jobs in CargoWise.
 
 The automation was designed to:
 
@@ -519,46 +518,46 @@ The automation was designed to:
 
 I developed a structured automation workflow using two primary components.
 
-Cargo Feeder acts as the controlled data-entry and validation layer. It provides searchable dropdowns, predefined Michelin-specific values, mandatory-field validation, and booking-status indicators. Records are marked as Completed only when the required data has been entered correctly. Incomplete records remain blocked from XML submission until the identified issues are corrected.
+The Excel feeder template acts as the controlled data-entry and validation layer. It provides searchable dropdowns, predefined customer-specific values, mandatory-field validation, and booking-status indicators. Records are marked as Completed only when the required data has been entered correctly. Incomplete records remain blocked from XML submission until the identified issues are corrected.
 
-CargoSync acts as the processing and integration layer. It receives the selected Cargo Feeder workbook, generates the required XML files, and sends them to CargoWise. After processing, the application displays a summary showing the number of shipments detected, successfully processed, and not completed.
+The desktop processing application acts as the processing and integration layer. It receives the selected workbook, generates the required XML files, and sends them to CargoWise. After processing, the application displays a summary showing the number of shipments detected, successfully processed, and not completed.
 
 The workflow also includes Outlook-based submission verification, CargoWise job-creation confirmations, and XML attachments for operational reference.
 
 ## Summary
 
-Michelin Job Automation transformed a repetitive manual CargoWise job-creation process into a controlled, validated, and traceable automation workflow.
+The solution transformed a repetitive manual CargoWise job-creation process into a controlled, validated, and traceable automation workflow.
 
-The solution guides users from booking-data preparation through XML generation, CargoWise submission, and confirmation. It includes safeguards for incomplete records, duplicate submissions, and incorrect template usage while maintaining a practical interface for operational users.
+It guides users from booking-data preparation through XML generation, CargoWise submission, and confirmation. It includes safeguards for incomplete records, duplicate submissions, and incorrect template usage while maintaining a practical interface for operational users.
 
-I also created a project demonstration video to explain the complete workflow, show the Cargo Feeder and CargoSync interfaces, and demonstrate how shipment data is validated, processed, and submitted to CargoWise.
+I also created a project demonstration video to explain the complete workflow and demonstrate how shipment data is validated, processed, and submitted to CargoWise.
 
 ## Key Work
 
-- Designed and developed the CargoSync desktop application for processing Michelin shipment records.
-- Created the macro-enabled Cargo Feeder Excel template for structured booking-data entry.
+- Designed and developed a desktop application for processing customer shipment records.
+- Created a macro-enabled Excel template for structured booking-data entry.
 - Implemented mandatory-field validation and Completed / Not Completed booking-status indicators.
 - Added searchable dropdowns and automatic code mapping for carriers, consignees, destinations, job operators, movement types, and other CargoWise fields.
-- Configured Michelin-specific default values to reduce repeated manual data entry.
-- Developed the conversion of Cargo Feeder booking data into CargoWise-compatible XML files.
+- Configured customer-specific default values to reduce repeated manual data entry.
+- Developed the conversion of booking data into CargoWise-compatible XML files.
 - Implemented shipment-processing summaries showing detected, completed, and incomplete records.
-- Added duplicate-submission controls to prevent the same processed Cargo Feeder file from being submitted again.
+- Added duplicate-submission controls to prevent the same processed workbook from being submitted more than once.
 - Integrated Outlook-based XML delivery, summary reporting, and CargoWise confirmation emails.
-- Supported both new job creation and the reuse of an existing CargoWise job through the optional HBL workflow.
-- Prepared the complete user SOP covering data entry, validation, submission, verification, and troubleshooting.
+- Supported both new job creation and the reuse of an existing CargoWise job through an optional HBL workflow.
+- Prepared a complete user SOP covering data entry, validation, submission, verification, and troubleshooting.
 - Produced a project demonstration video presenting the complete end-to-end automation process.
 
 ## Business Value
 
-**Reduced manual effort:** The automation removes the need to manually recreate complete Michelin shipment records directly inside CargoWise.
+**Reduced manual effort:** The automation removes the need to manually recreate complete customer shipment records directly inside CargoWise.
 
 **Improved data accuracy:** Mandatory-field validation, controlled dropdowns, and predefined values reduce typing errors, missing information, and incorrect CargoWise codes.
 
-**Faster job creation:** Multiple shipment records can be prepared in the Cargo Feeder template and processed through a consistent XML-based workflow.
+**Faster job creation:** Multiple shipment records can be prepared in the Excel template and processed through a consistent XML-based workflow.
 
 **Lower operational risk:** Incomplete records are blocked from submission, while duplicate-submission controls reduce the risk of creating redundant jobs.
 
-**Standardized operations:** All users follow the same structured process for data entry, validation, XML generation, and CargoWise submission.
+**Standardized operations:** Users follow the same structured process for data entry, validation, XML generation, and CargoWise submission.
 
 **Improved traceability:** Processing summaries, Sent Items verification, CargoWise confirmation emails, and XML attachments provide clear evidence of each submission.
 
@@ -583,7 +582,10 @@ export function getPortfolioProjectBySlug(slug: string) {
 
 export function searchPortfolioProjects(query: string) {
   const searchTerm = query.trim().toLowerCase();
-  if (!searchTerm) return listedPortfolioProjects;
+
+  if (!searchTerm) {
+    return listedPortfolioProjects;
+  }
 
   return listedPortfolioProjects.filter((project) => {
     const searchable = [
