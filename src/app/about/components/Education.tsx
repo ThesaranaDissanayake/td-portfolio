@@ -29,7 +29,7 @@ const Education = () => {
             title={"G.C.E. Advanced Level - Technology Stream"}
             subtitle={"Bandaranayake College, Gampaha"}
             description={
-              "Science for Technology - C | Bio Systems Technology - C | Agricultural Science - C"
+              "Science for Technology - C | Bio Systems Technology - C | Agricultural Science - S"
             }
           />
         </Stack>
