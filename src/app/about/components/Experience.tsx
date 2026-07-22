@@ -19,7 +19,7 @@ const experienceCards = [
   },
   {
     title: "Intern - Operations Analyst",
-    subtitle: "EFL Global / Expolanka Freight (Pvt) Ltd - Sri Lanka",
+    subtitle: "EFL Global - Sri Lanka",
     date: "22 Jan 2024 - 30 Sep 2024",
     descriptions: [
       "Gained practical exposure to freight forwarding operations, documentation standards, organizational workflows, and inter-departmental coordination.",

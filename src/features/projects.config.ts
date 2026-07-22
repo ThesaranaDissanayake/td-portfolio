@@ -31,14 +31,6 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "A production MDM workflow system for a Sri Lankan operation that replaced Excel and email-based request handling with structured validation, approvals, traceability, and controlled finalization.",
     image: "/projects/Sri Lanka Master Data Management System.png",
-    demoVideos: [
-      {
-        provider: "youtube",
-        title: "Master Data Management System demo video",
-        videoId: "U2KIq_BYp7Y",
-        sectionTitle: "Project Demo",
-      },
-    ],
     content: `## About
 
 The Sri Lanka Master Data Management System was a production web application developed specifically for a Sri Lankan operation. It digitalized the local process for requesting, reviewing, approving, and finalizing master data changes used within CargoWise.
